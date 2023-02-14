@@ -1,0 +1,35 @@
+.App {
+  padding: 20px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.Screen {
+  border: 1px black solid;
+  width: 800px;
+  height: 400px;
+  margin: 0 auto;
+  flex-grow: 2;
+}
+
+.ToolBar {
+  width: 300px;
+}
+
+.ToolTip {
+  border: 1px gray solid;
+  margin: 0 0 12px 0;
+  padding-bottom: 20px;
+}
+
+.ToolTip > div:first-child {
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.ToolTip > div:last-child {
+  display: block;
+  padding: 0 20px;
+  box-sizing: border-box;
+}

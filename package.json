@@ -1,0 +1,45 @@
+{
+  "name": "inemotion",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "yarn run lerna:bootstrap && yarn run link",
+    "link": "cd ./playground && yarn && npm link ../packages/core && npm link ../packages/app",
+    "lerna:bootstrap": "lerna bootstrap",
+    "lerna:prepack": "lerna run prepack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirKalmykov/inemotion.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirKalmykov/inemotion/issues"
+  },
+  "homepage": "https://github.com/VladimirKalmykov/inemotion#readme",
+  "workspaces": [
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/node": "^12.6.2",
+    "babel-plugin-module-resolver": "^3.2.0",
+    "lerna": "^6.5.1",
+    "tslint": "^5.18.0",
+    "tslint-react": "^4.0.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

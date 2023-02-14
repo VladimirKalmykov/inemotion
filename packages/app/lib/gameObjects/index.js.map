@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","names":["Camera"],"sources":["../../src/gameObjects/index.ts"],"sourcesContent":["import Camera from \"./Camera\";\r\n\r\nexport default {\r\n  Camera,\r\n};\r\n"],"mappings":";;;;;;AAAA;AAA8B;AAAA,eAEf;EACbA,MAAM,EAANA;AACF,CAAC;AAAA"}

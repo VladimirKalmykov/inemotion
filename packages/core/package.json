@@ -1,0 +1,25 @@
+{
+  "name": "@inemotion/core",
+  "version": "0.1.0",
+  "description": "Inemotion helper and core modules",
+  "main": "lib/index.js",
+  "typings": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "cross-env BABEL_ENV=build babel --root-mode upward --extensions .ts,.tsx src --out-dir lib --source-maps --delete-dir-on-start --no-comments",
+    "dev": "cross-env BABEL_ENV=build babel --root-mode upward --extensions .ts,.tsx src --out-dir lib --source-maps --delete-dir-on-start --no-comments --watch"
+  },
+  "keywords": [
+    "canvas",
+    "engine",
+    "platform"
+  ],
+  "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

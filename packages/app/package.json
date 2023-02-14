@@ -1,0 +1,29 @@
+{
+  "name": "@inemotion/app",
+  "version": "0.1.0",
+  "description": "Expressive javascript graphics engine",
+  "main": "lib/index.js",
+  "typings": "src/index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepack": "cross-env BABEL_ENV=build babel --root-mode upward --extensions .ts,.tsx src --out-dir lib --source-maps --delete-dir-on-start --no-comments",
+    "dev": "cross-env BABEL_ENV=build babel --root-mode upward --extensions .ts,.tsx src --out-dir lib --source-maps --delete-dir-on-start --no-comments --watch"
+  },
+  "dependencies": {
+    "@inemotion/core": "*",
+    "@types/lodash.get": "^4.4.6",
+    "@types/lodash.set": "^4.3.6",
+    "lodash.get": "^4.4.2",
+    "lodash.set": "^4.3.2"
+  },
+  "keywords": [
+    "canvas",
+    "engine",
+    "platform"
+  ],
+  "author": "Vladimir Kalmykov <vladimirmorulus@gmail.com>",
+  "license": "MIT"
+}

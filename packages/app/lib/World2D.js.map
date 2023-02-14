@@ -1,0 +1,1 @@
+{"version":3,"file":"World2D.js","names":["World2D","BaseModule"],"sources":["../src/World2D.ts"],"sourcesContent":["import { BaseModule } from \"@inemotion/core\";\r\n\r\nexport default class World2D extends BaseModule {\r\n\r\n}\r\n"],"mappings":";;;;;;AAAA;AAEe,MAAMA,OAAO,SAASC,gBAAU,CAAC;AAE/C"}
